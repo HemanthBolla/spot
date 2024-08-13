@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Noto+Sans+Khojki&display=swap');
+body{
+    background-color:#36454F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 12px;
+    
+}
+nav ul{
+    /*  using the flex requires parent elements */
+    display:flex;      
+    list-style-type:none;
+    height: 60px;
+    background-color:black;
+    color: aliceblue;
+    align-items: center;
+    
+    
+}
+
+nav ul li{
+    padding:0 12px;
+}
+.brand img {
+    width: 40px;
+    height:40px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: larger; 
+    /* 1 rem defines as one times the root font size */
+    
+}
+.container
+{
+    min-height: 65vh;
+    background-color:rgba(18,18,18,255);
+    color: aliceblue;
+    /* font-style: italic; */
+    font-family: "Bubblegum Sans", sans-serif;
+    font-weight:lighter;
+    font-size:xx-small; 
+    display: flex;
+    width:70%;   
+    margin:23px auto;
+    border-radius:15px;
+    padding: 34px;
+    background-image: url(bg.jpg); 
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center; 
+                                           
+
+}
+.bottom{
+    position:sticky;
+    height: 135px;
+    background-color: black;  
+    bottom: 0; 
+    display:flex;
+    justify-content: center; /*horizontally and below alignitema is vertcaly=ly*/
+    align-items: center;
+    color:white;
+    flex-direction: column;
+    padding: 12px;
+
+}
+#progressbar{
+     width:80vw;
+     /* text-align: center; */
+    
+
+}
+.icons{
+   /* display: flex; */
+   padding:0 10px;
+   justify-content:space-between;
+   margin-top: 30px;
+   margin-bottom: 20px;
+   /* padding-bottom: 30px; */
+
+}
+i{
+    padding: 10px;
+}
+
+.songitem{
+    height:50px;
+    display: flex;
+    background-color: white;
+    width:auto;
+    color:black;
+    margin: 15px 0;
+    /* margin-left: 23px; */
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    font-size: small;
+}
+.songitem img{
+    width:30px;
+    height:30px;
+    margin: 0 23px;
+    border-radius: 5px;
+
+}
+.timestamp{
+    margin: 0 23px;
+    font-size:small;
+}
+.timestamp i{
+    cursor:pointer;
+}
+.songitemcontainer{
+    margin-top: 60px;
+}
+.songinfo{
+    position:absolute;
+    left:10vw;
+    display: flex;
+    align-items: center;
+}
+.songinfo img{
+    height:40px;
+    padding-bottom: 20px;
+    text-align: center;
+    justify-content: center;
+    width: auto;
+    opacity:0;
+    transition: opacity 0.8s ease-in;
+}
+
+
+.toggle-off {
+    padding-left:75%;
+    padding-top:0px;
+    margin-top: -30px;
+
+}
